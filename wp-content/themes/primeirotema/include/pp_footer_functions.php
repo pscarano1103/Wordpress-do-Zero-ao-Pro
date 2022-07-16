@@ -1,5 +1,5 @@
 <?php
 
 function pp_fim() {
-    echo "Vai encerrar tudo ...";
+    echo "Funções de fim de script...";
 }
