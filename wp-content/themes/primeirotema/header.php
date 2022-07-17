@@ -13,6 +13,7 @@
             wp_nav_menu(array(
                 'theme_location' => 'primary',
                 'container' => 'nav',
+                'container_class' => 'main_menu',
                 'fallback_cb' => false
             ));
         }

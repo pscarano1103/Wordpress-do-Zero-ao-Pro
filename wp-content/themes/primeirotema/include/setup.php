@@ -12,3 +12,17 @@ function pp_after_setup()
 
     register_nav_menu('primary', __('Primary Menu', 'primeirotema'));
 }
+
+
+function pp_widgets()
+{
+    register_sidebar(array(
+        'name' => __('Meu primeiro Sidebar', 'primeirotema'),
+        'id' => 'pp_sidebar',
+        'description' => __('Sidebar para o tema', 'primeirotema'),
+        'before_title' => '<h4 class="widget_title">',
+        'after_title' => '</h4>',
+        'befor_widget' => '<div id="%1$s" class="widget %2$s"',
+        'after_widget' => '</div>'
+    ));
+}
