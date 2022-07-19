@@ -36,3 +36,16 @@ sidebar {
 .widget_title{
     color: #0000FF;
 }
+
+article {
+    border-bottom: 1px solid #000;
+    background-color: #FFF;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+article .post_thumbnail{
+    float: left;
+    margin-right: 20px;
+}
