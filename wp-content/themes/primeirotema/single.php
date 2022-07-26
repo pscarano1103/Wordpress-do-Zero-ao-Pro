@@ -27,16 +27,24 @@
                     <p>
                         <?php comments_number('0 comentários', 'um comentário', '% comentários'); ?>
                     </p>
+
+                    <hr />
+
+                    <?php
+                    if (comments_open()) {
+                        comments_template();
+                    }
+                    ?>
                 </article>
             <?php endwhile; ?>
         <?php endif; ?>
 
         <div class="paginacao">
             <div class="pagina_anterior">
-                <?php previous_post_link('%link', 'Post Anterior'); ?>
+                <?php previous_post_link(); ?>
             </div>
             <div class="pagina_proxima">
-                <?php next_post_link('%link', 'Próximo Post'); ?>
+                <?php next_post_link(); ?>
             </div>
         </div>
     </div>

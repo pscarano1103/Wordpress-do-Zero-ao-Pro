@@ -62,3 +62,16 @@ article .post_thumbnail{
 .pagina_proxima{
     float: right;
 }
+
+footer {
+    margin-top: 50px;
+}
+
+.comentario {
+    border-bottom: 1px solid #CCC;
+}
+
+.comentario_foto {
+    float: left;
+    margin-right: 10px;
+}
