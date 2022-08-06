@@ -9,7 +9,7 @@
     </a>
     <p class="post-meta">Postado por
         <a href="<?php
-                    echo get_author_posts_url(get_the_author_meta());
+                    echo get_author_posts_url(get_the_author_meta('ID'));
                     ?>"><?php the_author(); ?></a>
         em <?php echo get_the_date(); ?>
     </p>
