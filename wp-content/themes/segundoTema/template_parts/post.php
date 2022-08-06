@@ -3,9 +3,11 @@
         <h2 class="post-title">
             <?php the_title(); ?>
         </h2>
-        <h3 class="post-subtitle">
-            Problems look mighty small from 150 miles up
-        </h3>
+        <?php if (function_exists('the_subtitle')) : ?>
+            <h3 class="post-subtitle">
+                <?php the_subtitle(); ?>
+            </h3>
+        <?php endif; ?>
     </a>
     <p class="post-meta">Postado por
         <a href="<?php
