@@ -58,11 +58,49 @@
 
                 <div class="main_info">
                     <div class="row">
-                        <div class="col-sm-8">
-                            ...
+                        <div class="col-sm-8 randompost">
+                            <strong>Você Ja viu?</strong>
+                            <?php
+                            $pm_query = new WP_Query(array(
+                                'posts_per_page' => 1,
+                                'post_type' => 'post',
+                                'orderby' => 'rand'
+                            ));
+                            if ($pm_query->have_posts()) {
+                                while ($pm_query->have_posts()) {
+                                    $pm_query->the_post();
+                            ?>
+                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            <?php
+
+
+                                }
+
+                                wp_reset_postdata();
+                            }
+                            ?>
                         </div>
                         <div class="col-sm-4 socialarea">
-                            ...
+                            <div class="socilatxt">
+                                SIGA:
+                            </div>
+                            <div class="socialicons">
+                                <a href="https://facebook.com">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.png" alt="" target="_blank" />
+                                </a>
+                                <a href="https://google.com">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gplus.png" alt="" target="_blank" />
+                                </a>
+                                <a href="https://instagram.com">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.png" alt="" target="_blank" />
+                                </a>
+                                <a href="https://twitter.com">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.png" alt="" target="_blank" />
+                                </a>
+                                <a href="https://youtube.com">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.png" alt="" target="_blank" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

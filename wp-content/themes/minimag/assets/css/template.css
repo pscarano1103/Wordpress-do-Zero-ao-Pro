@@ -87,14 +87,46 @@ body {
 
 .main_info {
   background-color: #ffff;
-  height: 55px;
+  height: 53px;
 }
 
 .socialarea {
   background-color: #3382b5;
   height: 100%;
+  color: #c2dae9;
 }
 
+.socilatxt {
+  line-height: 53px;
+  float: left;
+}
+
+.socialicons {
+  float: right;
+  height: 20px;
+  margin-top: 16px;
+}
+
+.socialicons img {
+  height: 20px;
+}
+
+.socialicons a {
+  text-decoration: none;
+  margin-left: 10px;
+}
 .main_info .row {
+  height: 100%;
   margin: 0;
+}
+
+.randompost {
+  line-height: 53px;
+  color: #999999;
+}
+
+.randompost a {
+  color: #999999;
+  margin-left: 30px;
+  text-decoration: none;
 }
