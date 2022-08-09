@@ -13,7 +13,7 @@
 
     <div class="top_header">
         <nav class="navbar navbar-default">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="collapse navbar-collapse">
                     <?php
                     if (has_nav_menu('top')) {
@@ -31,7 +31,7 @@
     </div>
 
     <div class="main_header">
-        <div class="container-fluid">
+        <div class="container">
             <div class="logo">
                 <?php
                 if (has_custom_logo()) {
@@ -85,20 +85,20 @@
                                 SIGA:
                             </div>
                             <div class="socialicons">
-                                <a href="https://facebook.com">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.png" alt="" target="_blank" />
+                                <a href="https://facebook.com" target="blank">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.png" alt="" />
                                 </a>
-                                <a href="https://google.com">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gplus.png" alt="" target="_blank" />
+                                <a href="https://google.com" target="blank">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gplus.png" alt="" />
                                 </a>
-                                <a href="https://instagram.com">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.png" alt="" target="_blank" />
+                                <a href="https://instagram.com" target="blank">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.png" alt="" />
                                 </a>
-                                <a href="https://twitter.com">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.png" alt="" target="_blank" />
+                                <a href="https://twitter.com" target="blank">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/twitter.png" alt="" />
                                 </a>
-                                <a href="https://youtube.com">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.png" alt="" target="_blank" />
+                                <a href="https://youtube.com" target="blank">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.png" alt="" />
                                 </a>
                             </div>
                         </div>
@@ -109,6 +109,3 @@
 
 
     </div>
-
-
-</body>

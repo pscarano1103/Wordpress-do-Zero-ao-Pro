@@ -113,7 +113,6 @@ body {
 
 .socialicons a {
   text-decoration: none;
-  margin-left: 10px;
 }
 .main_info .row {
   height: 100%;
@@ -129,4 +128,24 @@ body {
   color: #999999;
   margin-left: 30px;
   text-decoration: none;
+}
+
+section .row {
+  margin: 0;
+}
+
+.sidebar {
+  background-color: #eee;
+}
+
+.sidebar .widget {
+  border-bottom: 2px solid #e4e4e4;
+}
+.sidebar .widget .tagcloud {
+  padding-bottom: 20px;
+}
+.sidebar .widget .tagcloud a {
+  background-color: #94c345;
+  color: #fff;
+  padding: 10px;
 }

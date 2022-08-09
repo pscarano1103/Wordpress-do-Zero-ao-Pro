@@ -21,4 +21,13 @@ function pm_after_setup()
 
 function pm_widgets()
 {
+    register_sidebar(array(
+        'name' => 'Sidebar Lateral',
+        'id' => 'pm_sidebar',
+        'description' => 'Sidebar lateral',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="widget_title">',
+        'after_title' => '</h4>'
+    ));
 }
